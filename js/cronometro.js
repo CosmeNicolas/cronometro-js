@@ -17,7 +17,7 @@ const iniciar = ()=>{
 
 const actualizarTiempo = () =>{
   segundo++
-  console.log(segundo);
+ // console.log(segundo);
   if(segundo>=60){
     segundo = 0;
     minuto++;
