@@ -19,11 +19,16 @@
   <header class="cronometro py-4 bg-dark text-light text-center ">CRONOMETRO</header>
   <main>
     <section class="container-fluid text-center d-flex justify-content-center flex-column py-5">
-      <h1 class="cronometro" id="tiempo">⏳00:00:00⌛</h1>
+      <div>
+        <h1 class="cronometro" id="tiempo">00:00:00</h1>
+
       <div>
         <button class="cronometro btn btn-primary" onclick="inicio()">Iniciar</button>
         <button class="cronometro btn btn-danger" onclick="pausar()">Pausar</button>
         <button class="cronometro btn btn-warning" onclick="resetear()">Reset</button>
+      </div>
+      <div class="py-5">
+        ⌛⏳⌚🕰️
       </div>
     </section>
   </main>
