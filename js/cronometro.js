@@ -20,7 +20,7 @@ const resetear = () =>{
   segundos = 0;
   minutos = 0;
   horas = 0;
-    
+  document.getElementById('tiempo').innerText = '00:00:00';
 }
 
 
@@ -30,15 +30,15 @@ const actualizarTiempo = () =>{
   if(segundos>=60){
     segundos = 0;
     minutos++;
-    console.log(minuto);
+    console.log(minutos);
     if(minutos >= 60){
       minutos = 0;
       horas++;
     }
   }
+
+  const verTiempo = `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2,'0')} :${segundos.toString().padStart(2, '0')}`;
+  document.getElementById('tiempo').innerText = verTiempo
 }
 
-
-
-//document.getElementById('tiempo').addEventListener('click', iniciar)
 
